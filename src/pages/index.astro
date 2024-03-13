@@ -1,5 +1,8 @@
 ---
+import "../styles/style.css"
 
+import Navigation from "../components/Navigation.astro";
+import Card from "../components/Card.astro";
 ---
 
 <html lang="en">
@@ -7,10 +10,50 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex">
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Spotify</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+
+
+	<main>
+		<div class="grid_1-5">
+		<div>
+		<Navigation/>
+</div>
+<div class="content">
+		<h2>Focus</h2>
+		<div class="grid_gallery">
+		<Card header="Mega Hit Mix" text="A mega mix of 75 favorites"> <img src="/ariana.jpeg" alt=""></Card>
+		<Card header="All Out 2010s" text="The biggest songs of the 2010s"> <img src="/bruno.jpeg" alt=""></Card>
+		<Card header="Mega Hit Mix" text="A mega mix of 75 favorites"> <img src="/ariana.jpeg" alt=""></Card>
+		<Card header="All Out 2010s" text="The biggest songs of the 2010s"> <img src="/bruno.jpeg" alt=""></Card>
+		<Card header="Mega Hit Mix" text="A mega mix of 75 favorites"> <img src="/ariana.jpeg" alt=""></Card>
+		<Card header="All Out 2010s" text="The biggest songs of the 2010s"> <img src="/bruno.jpeg" alt=""></Card>
+		</div>
+
+		<h2>Spotify Playlist</h2>
+		<div class="grid_gallery">
+		<Card header="Mega Hit Mix" text="A mega mix of 75 favorites"> <img src="/ariana.jpeg" alt=""></Card>
+		<Card header="All Out 2010s" text="The biggest songs of the 2010s"> <img src="/bruno.jpeg" alt=""></Card>
+		<Card header="Mega Hit Mix" text="A mega mix of 75 favorites"> <img src="/ariana.jpeg" alt=""></Card>
+		<Card header="All Out 2010s" text="The biggest songs of the 2010s"> <img src="/bruno.jpeg" alt=""></Card>
+		<Card header="Mega Hit Mix" text="A mega mix of 75 favorites"> <img src="/ariana.jpeg" alt=""></Card>
+		<Card header="All Out 2010s" text="The biggest songs of the 2010s"> <img src="/bruno.jpeg" alt=""></Card>
+		</div>
+		
+		<h2>Sleep</h2>
+		<div class="grid_gallery">
+		<Card header="Mega Hit Mix" text="A mega mix of 75 favorites"> <img src="/ariana.jpeg" alt=""></Card>
+		<Card header="All Out 2010s" text="The biggest songs of the 2010s"> <img src="/bruno.jpeg" alt=""></Card>
+
+	
+		
+		</div>
+		</div>
+
+
+	</main>
 	</body>
 </html>
